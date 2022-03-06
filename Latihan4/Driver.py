@@ -4,7 +4,7 @@ from Job import Job
 class Driver(Person, Job):
     # Constructor
     def __init__(self):
-        self.__licenseID = 0
+        self.__licenseID = ""
         self.__activeUntil = ""
         self.__vehicleType = ""
     
@@ -37,7 +37,7 @@ class Driver(Person, Job):
         print("NIP          : " + str(self.getNIP()))
         print("Company Name : " + self.getCompanyName())
         print("Position     : " + self.getPosition())
-        print("License ID   : " + str(self.getLicenseID()))
+        print("License ID   : " + self.getLicenseID())
         print("Active Until : " + self.getActiveUntil())
         print("Vehicle Type : " + self.getVehicleType())
         print("========================================")
